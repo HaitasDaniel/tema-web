@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Postări - Tema 1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Postări</h1>
+    <nav>
+      <a href="#adauga">Adaugă</a>
+      <a href="#lista">Listă</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="adauga">
+      <h2>Adaugă o postare</h2>
+      <form id="form-postare">
+        <label for="titlu">Titlu</label>
+        <input id="titlu" name="title" type="text" required maxlength="100">
+
+        <label for="continut">Conținut</label>
+        <textarea id="continut" name="body" rows="4" required></textarea>
+
+        <button type="submit">Adaugă</button>
+        <p id="mesaj-form" class="mesaj"></p>
+      </form>
+    </section>
+
+    <section id="lista">
+      <h2>Lista postărilor</h2>
+      <p id="status" class="mesaj"></p>
+      <ul id="postari"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Date de la JSONPlaceholder - Tema 1, Proiectare Web</p>
+  </footer>
+</body>
+</html>
