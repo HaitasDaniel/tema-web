@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background: #f4f6f5;
+  color: #222;
+}
+
+header, main, footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+h1 {
+  margin: 0;
+  color: #0f5c4a;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  color: #0f5c4a;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 32px;
+  align-items: start;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: white;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  font: inherit;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+button {
+  padding: 8px 16px;
+  font: inherit;
+  color: white;
+  background: #0f5c4a;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.mesaj {
+  margin: 0;
+  min-height: 24px;
+}
+
+.eroare {
+  color: #b3261e;
+}
+
+.succes {
+  color: #0f5c4a;
+}
+
+#postari {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow-wrap: break-word;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.card p {
+  margin: 0 0 12px;
+}
+
+.sterge {
+  background: #b3261e;
+}
+
+footer {
+  color: #666;
+  font-size: 14px;
+}
+
+/* pe telefon formularul si lista sunt una sub alta */
+@media (max-width: 700px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
